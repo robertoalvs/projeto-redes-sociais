@@ -47,3 +47,28 @@ iframe#tela { /* Organizando a posição do background do iframe do home.html */
     height: 471px;
     background-size: cover;
 }
+
+section#sociais img {
+
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%; /* Deixando 50% as bordas em torno do objeto fica redondo */
+    box-shadow: 2px 2px 5px black;
+    box-sizing: border-box; /* Faz com que a borda faça parte do objeto, assim o restante dos icones não se mexem */
+
+}
+
+section#sociais {
+
+    text-align: right;
+}
+
+section#sociais img:hover {
+
+    border: 2px solid rgba(255, 255, 255, 0.585);
+    transform: translate(-5px, -5px); /* quando passar o mouse em cima o icone, ele vai se movimentar -5px paa esquerda e -5px para direita */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.459);
+    transition: transform .5s; /* Adiciona efeito de transição */
+    transition: transform border 1s;
+
+}
