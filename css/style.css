@@ -9,31 +9,31 @@
 html, body {
 
     background-color: black;
-    height: 100vh;
-    width: 100vw;
+    height: 100vh; /* 100% - Altura total do navegador */
+    width: 100vw; /* 100% - Largura total do navegador */
 }
 
 body {
 
-    background: url(../pacote-d013/imagens/fundo-madeira.jpg) no-repeat top center;
-    background-size: cover;
-    background-attachment: fixed;
+    background: url('../pacote-d013/imagens/fundo-madeira.jpg') no-repeat top center; /* Não repete a imagem, e foi alinhada no top e no centro */
+    background-size: cover; /* cobre a tela toda com a imagem */
+    background-attachment: fixed; /* fixar a imagem, causando um efeito de paralax */
 }
 
 main {
-    
+
     height: 100vh;
-    position: relative;
+    position: relative; /* Deixamos o posicionamento relativo do main, assim permite controlar o psicionamento do que está dentro dele, que no caso, uma (section com a id #telefone ) */
 }
 
 section#telefone {
 
     background-color: blue;
-    width: 311px;
-    height: 627px;
-    position: absolute;
+    width: 311px; /* largura da imagem do telefone */
+    height: 627px; /* Altura da imagem do telefone */ 
+    position: absolute;  /* Permite que posicionamos nosso telefone no meio da tela,  junto com os parametros top e left em 50% e o (transform - translate -50%, -50% */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    background: url(../pacote-d013/imagens/frame-iphone.png) no-repeat;
+    transform: translate(-50%, -50%); /* -50% para esquerda e -50% para cima, assim centralizado o telefone */
+    background: url('../pacote-d013/imagens/frame-iphone.png') no-repeat;
 }
